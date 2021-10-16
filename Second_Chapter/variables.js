@@ -3,6 +3,7 @@
                 ---All JavaScript varibles must be indentified with uniques names
                 ---This unique names are called indentified
                 ---JavaScript indentifiers are case-sensitive
+                ---JavaScript is Case Sensitive Meaning var and Var is not same
 */
 
 var name = 'Muhammad Shohag Islam'
