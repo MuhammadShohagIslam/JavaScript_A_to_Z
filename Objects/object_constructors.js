@@ -3,6 +3,8 @@
     Object Constructor:  Object constructor is a object constructor function 
     through which we can create many objects of the same 'type'
     *It is considered good practice to name constructor functions with an upper-case first letter.
+    *The Math() is not the constructor . it is a global objects. The new keyword cannot be used on Math.
+
 */
 // Create object constructor
 function Person(first, last, age) {
@@ -54,7 +56,3 @@ const eshan = new Person1("Muhummad Eshan", "Miah", 11, "Bangladesh");
 eshan.changeName("Islam");
 console.log(eshan);
 console.log(eshan.fullName());
-
-/*
-    The Math() is not the constructor . it is a global objects. The new keyword cannot be used on Math.
-*/
