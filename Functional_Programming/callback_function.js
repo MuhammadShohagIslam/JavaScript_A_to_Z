@@ -4,6 +4,7 @@
     *Remember when we pass a function as a argument, remember not to use parenthesis.
     *This technique allows a function to call another function.
     * A callback function can run after another function has finished.
+    *** Most of the time we can not create a callback function,  someone will make it, like when we are used library function or framework where already create system, just we are call main function.When we are call main function, we have to do  implimentation. It is anonymous function.
     
 */
 // create a callback function
