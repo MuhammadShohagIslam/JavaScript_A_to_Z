@@ -4,6 +4,7 @@
     * The forEach() method is not executed for empty elements.
     Syntax:
         array.forEach(function(currentValue, index, arr), thisValue)
+    *** It is not executed new array, it is only work on the existing array. 
 
 */
 const arr = [1, 3, 4, 5, 6];
