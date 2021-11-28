@@ -18,3 +18,24 @@ function abc() {
 }
 
 abc(); // return value
+
+/*
+    *** Function Declaration vs Function Expression ***
+        // Creational Phase:
+            declarationFunction = ref
+            expressionFunction = undefined
+        // Execution Phase:
+            all code are executed But after invoking expressionFunction return undefined because we invoke function before function
+*/
+declarationFunction();
+
+function declarationFunction() {
+  console.log("I am a Declaration Function");
+}
+
+expressionFunction(); // return undefined
+
+function expressionFunction() {
+  console.log("I am a Expression Function");
+}
+// expressionFunction // return value
