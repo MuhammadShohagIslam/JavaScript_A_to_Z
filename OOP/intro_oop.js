@@ -29,7 +29,14 @@
             => Encapsulation
             => Inheritance
             => Polymorphism
+    *** A constructor is needed to create any object. Every object has a Constructor
+
+    *** Function is a special type of object, which is a executable(we are able to execute code from outside).
+    It has many properties.It has many method. We can use every features of 'Object'
+
+
 */
+// object literal way to create object
 // const rect = {
 //     width : 10,
 //     height: 20,
@@ -41,4 +48,44 @@
 // }
 // const x = rect.calutatedAree();
 // console.dir(x());
+
+
+const obj = {} // like below one
+const obj1 = new Object() // new Object() is a constructor.
+
+/*
+    *** Function is Object ***
+*/
+function test() {
+    console.log("Function is a object")
+}
+/*
+test.constructor
+ƒ Function() { [native code] } 
+
+=> it is proved that function is a object beacuse only object has constructor
+*/
+// another way to prove, function is a object
+    const objFun = new Function( 'width', 'length', ` this.width= width; // this.width is a class property
+    this.length = length; // this.length is a class property
+
+    this.calculateArea = function (){ // this.calculateArea is a class method
+        console.log("I am a Rectangle")
+        this.printProperties()
+        return "My Rectangle Area Is "+ this.width * this.length
+    };
+    this.printProperties = function (){ // this.calculateArea is a class method
+        console.log("My Width is "+ this.width);
+        console.log("My Length is "+this.length);
+    };`
+)
+
+const rectangular = new objFun(20,50); 
+console.log(rectangular);
+
+
+
+
+
+
 
