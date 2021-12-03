@@ -14,7 +14,7 @@
     => All of the constructors(Array, String, Function...) has prototype properties 
     Where we can use this build-in properties and method, can add new properties and method.
 
-
+    Note that: We will no change the Prototype of  JavaScript building object, it is big effected on the JavaScript Functionality. But, we can use the prototype which we have made as we wish, for your work purpose.
 */
 
 let obj = {}
@@ -90,6 +90,59 @@ console.log(p)
 
 // use of ConstructorName.prototype() to get prototype
 console.log(Person)
+
+/*
+    *** Instance Vs Prototype Members ***
+        There are two kind of Prototype of any kind of Object
+            1. Instance property/menber
+            2. Prototype member
+
+            Note that: Instance member can access from Prototype member
+            and Prototype members can access from Instance member.
+*/
+// create a instance member/property 
+function Calculate(a, b) {
+    this.a = a
+    this.b = b
+
+    this.add = function(){
+        return a + b;
+    }
+    this.subtruction = function(){
+        console.log(this.multiplication()) // we can access Prototype member/property
+        return a - b;
+    }
+}
+// create a Prototype member/property
+Calculate.prototype = {
+    b: 10,
+    multiplication:  function() {
+        return this.a * this.b; // we can access instance memeber/property
+    },
+    toString: function(){ // we can overridde prototype member
+        return "My a number value is => "+ this.a
+    }
+
+}
+const cal = new Calculate(10, 30);
+console.log(cal.toString())
+
+//  If we want to get instance member/property from a object constructor
+console.log(Object.keys(cal));
+
+// we can get instance member and custome prototype member
+for (let i in cal){
+    console.log(i)
+}
+
+// to find out whether any property belongs to this object
+console.log(cal.hasOwnProperty("a"))// return true, because it is instance member or property
+console.log(cal.hasOwnProperty("multiplication")) // return false, because it is parent property or prototype member
+
+
+
+
+
 
 
 
