@@ -1,0 +1,25 @@
+{
+  "name": "ECMAScript_Six",
+  "version": "1.0.0",
+  "description": "This a Webpack Setup for ES6 Learning Purpose",
+  "private": true,
+  "scripts": {
+    "start": "webpack server",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build-dev": "webpack"
+  },
+  "keywords": [],
+  "author": "Muhammad Shohag Islam",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
