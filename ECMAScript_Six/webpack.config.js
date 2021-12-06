@@ -30,6 +30,6 @@ module.exports = {
         compress: true,
         hot: true,
         open: true
-    }
-
+    },
+    devtool: 'source-map',
 }
