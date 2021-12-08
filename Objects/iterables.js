@@ -1,8 +1,8 @@
 /*
     ***JavaScript Iterables: A JavaScript is an object that has a Symbol.iterator
-        * Iterable is a iterable is a where we can do iterate, where has an order.
-            Array maintain order
-            string maintain order
+        * Iterable is a where we can do iterate, where has an order.
+            Array maintain order,
+            string maintain order,
             but object can not maintain order
     *Technically, iterables must implement the Symbol.iterator method. 
 */

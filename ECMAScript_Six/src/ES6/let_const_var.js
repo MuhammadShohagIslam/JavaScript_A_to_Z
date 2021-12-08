@@ -15,17 +15,17 @@
 // variable defined with 'let' can not be redeclared.
 let x = 10;
 // let x = 40; // it's not possible with same name like redeclare.
-console.log(x)
+console.log(x);
 
 // // variable defined with 'const' can not be redeclared.
-// const z = 40; 
+// const z = 40;
 const z = 40;
-console.log(z)
+console.log(z);
 
 // // variable defined with 'var' can be redeclared.
-var g = 40; 
+var g = 40;
 var g = 50;
-console.log(g)
+console.log(g);
 
 // variables defined with 'let' must be declared before use
 console.log(y); // it is not possible, return undefined.
@@ -51,52 +51,47 @@ var i = 10;
 */
 // use let keyword inside the block scope
 {
-    let f = 30;
-    console.log(f)
+  let f = 30;
+  console.log(f);
 }
 // console.log(f) // return error, cannot be accessed from outside the block.
 
 // use const keyword inside the block scope
 {
-    const e = 40;
-    console.log(e)
+  const e = 40;
+  console.log(e);
 }
 // console.log(e) // return error, cannot be accessed from outside the block.
 
 // use var keyword inside the block scope
 {
-    var p = 60;
-    console.log(p);
+  var p = 60;
+  console.log(p);
 }
 console.log(p); // but it is possible, if use var keyword inside the block scope, it is possible to declare outside
 
 // with Let, redeclaring a variable in the same block is not allowed.
 {
-    let o = 50;
-    //let o = 60; // not possible, it is redeclare
+  let o = 50;
+  //let o = 60; // not possible, it is redeclare
 }
 
 {
-    let o = 50;
-    //var o = 60; // not possible, it is redeclare
+  let o = 50;
+  //var o = 60; // not possible, it is redeclare
 }
 
 // redeclaring a variable with let, in another block, IS Possible
 let k = 20;
 
 {
-    let k = 50;
-    console.log(k);
+  let k = 50;
+  console.log(k);
 }
 
 {
-    let k = 30;
-    console.log(k);
+  let k = 30;
+  console.log(k);
 }
 
 console.log(k);
-
-
-
-
-

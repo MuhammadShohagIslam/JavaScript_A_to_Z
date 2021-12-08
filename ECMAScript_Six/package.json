@@ -24,7 +24,7 @@
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
-    "core-js": "^3.19.3",
-    "regenerator-runtime": "^0.13.9"
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime": "^7.16.3"
   }
 }

@@ -11,4 +11,3 @@
     * Internet Explorer does not support ECMAScript 2015
     
 */
-
