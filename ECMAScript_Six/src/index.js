@@ -11,5 +11,7 @@
 // import '../src/ES6/for_of_loop';
 // import '../src/ES6/genarator';
 // import '../src/ES6/sets';
-import '../src/ES6/map';
+// import '../src/ES6/map';
+// import '../src/ES6/class';
+import './ES6/Module_System/app.js';
 
