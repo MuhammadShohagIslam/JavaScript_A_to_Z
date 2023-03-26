@@ -1,5 +1,7 @@
 /*
  *** Reduce Method of Array's Build In Method ***
+    => we can use make array, object modify, array element modify whatever you want you can do
+    => acc = initial value, and cur is the current value
  */
 // *** Hands-on Reduce ***
 const array1 = [1, 2, 3, 4, 5, 6];
