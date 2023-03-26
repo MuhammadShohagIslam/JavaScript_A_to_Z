@@ -11,6 +11,11 @@
             * Variable defined with let and const can not be redeclared, but with 'var' keyword, it is possible
             * Variables defined with let, var, and const must be declared before use.
             * Variables defined with let and const  have Block Scope.
+            * varibale decalre with let, we can reasign value exiting variable but const is not possible
+                let a =20;
+                a= 30 // possible
+                const z = 20;
+                z-30; // is not possible
 */
 // variable defined with 'let' can not be redeclared.
 let x = 10;
@@ -46,7 +51,7 @@ var i = 10;
 
      *** Variable declared inside a {} block cannot be accessed from outside the block.
 
-     Note that: Variable declared with 'var' keeyword inside a {} block cannot be accessed from outside the block.
+     Note that: Variable declared with 'var' keeyword inside a {} block can be accessed from outside the block.
 
 */
 // use let keyword inside the block scope
